@@ -1,0 +1,9 @@
+Metric,Value
+Total Samples,"47,600"
+Cyberbullying,"39,671 (83.3%)"
+Not Cyberbullying,"7,929 (16.7%)"
+Imbalance Ratio,5.00:1
+Avg Text Length (chars),133.6
+Avg Word Count,23.7
+Min Text Length,1
+Max Text Length,4623

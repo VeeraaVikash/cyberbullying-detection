@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+build/
+dist/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Large files - NEVER commit these!
+data/external/*.csv
+data/raw/*.csv
+*.pth
+*.pt
+*.h5
+*.pkl
+models/saved_models/*.pth
+
+# IDE - VS Code, PyCharm
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Git
+.git/

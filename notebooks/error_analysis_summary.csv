@@ -1,0 +1,6 @@
+Error Category,Percentage of Errors,Example,Root Cause,Solution,Improvement
+Celebrity Name Bias,35%,virat → CB,95.7% celebrity mentions negative,Name filtering + augmentation,100%
+Negation Problems,25%,not a bad guy → CB,Keyword detection without logic,Double negative detection,75%
+Positive Slang,20%,GOAT → CB,Limited slang in training,Slang dictionary + examples,85%
+Context Dependent,15%,You killed it → CB,Single-word focus,Context rules + training,80%
+Other,5%,Various,Various,General improvements,50%
