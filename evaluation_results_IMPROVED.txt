@@ -1,0 +1,14 @@
+======================================================================
+COMPREHENSIVE EVALUATION RESULTS
+======================================================================
+
+OVERALL METRICS:
+  Accuracy:    0.8976
+  Precision:   0.9449
+  Recall:      0.9193
+  F1-Score:    0.9319
+  ROC-AUC:     0.9618
+  PR-AUC:      0.9883
+
+DETAILED CLASSIFICATION REPORT:
+{'Not CB': {'precision': 0.7621379028967769, 'recall': 0.8283813747228381, 'f1-score': 0.7938801529961751, 'support': 2255.0}, 'CB': {'precision': 0.9449031890660592, 'recall': 0.9192520775623269, 'f1-score': 0.9319011513619769, 'support': 7220.0}, 'accuracy': 0.8976253298153034, 'macro avg': {'precision': 0.853520545981418, 'recall': 0.8738167261425824, 'f1-score': 0.862890652179076, 'support': 9475.0}, 'weighted avg': {'precision': 0.9014060154183832, 'recall': 0.8976253298153034, 'f1-score': 0.8990528820939154, 'support': 9475.0}}

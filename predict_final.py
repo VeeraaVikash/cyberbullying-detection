@@ -129,7 +129,7 @@ def main():
     
     # Test texts
     test_texts = [
-        "You are stupid and ugly",
+        "Fuck you bitch",
         "Great work! Keep it up!",
         "I hate you so much, loser",
         "Have a wonderful day!",

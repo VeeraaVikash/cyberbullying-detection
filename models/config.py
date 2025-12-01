@@ -21,9 +21,9 @@ class TrainingConfig:
     DROPOUT = 0.3                      # Dropout rate
     
     # Data paths
-    TRAIN_DATA = 'data/processed_augmented/train.csv'
-    VAL_DATA = 'data/processed_augmented/val.csv'
-    TEST_DATA = 'data/processed_augmented/test.csv'
+    TRAIN_DATA = 'data/processed_with_edge_cases/train.csv'
+    VAL_DATA = 'data/processed_with_edge_cases/val.csv'
+    TEST_DATA = 'data/processed_with_edge_cases/test.csv'
     
     # Model save path
     MODEL_SAVE_DIR = 'models/saved_models'
