@@ -1,40 +1,83 @@
+# Model files (too large for GitHub)
+models/saved_models/*.pth
+*.pth
+*.pt
+checkpoints/
+
+# Data files
+data/
+datasets_edge_cases/
+*.csv
+*.json
+
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
 venv/
+env/
 ENV/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# Data
-data/raw/*.csv
-data/processed/*.csv
-*.pkl
-*.h5
-
-# Models
-models/*.pth
-models/*.pt
-models/*.bin
+.venv
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*.sublime-project
+*.sublime-workspace
 
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Logs
 *.log
 logs/
 
-# Environment
+# Environment variables
 .env
+.env.local
+
+# Static generated files
+static/*.csv
+static/prediction_history_*.csv
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# PyTorch
+runs/
+lightning_logs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
