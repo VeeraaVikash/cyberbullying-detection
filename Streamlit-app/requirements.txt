@@ -17,3 +17,5 @@ plotly==5.18.0
 
 # Utilities
 python-dateutil==2.8.2
+
+huggingface-hub

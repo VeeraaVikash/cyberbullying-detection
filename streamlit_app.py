@@ -106,8 +106,8 @@ def load_classifier():
     try:
         # Try to load your trained model
         # Adjust the path to where your model is located
-        model_path = "modebert_cyberbullying_improved.pth"
-
+        model_path = "bert_cyberbullying_improved.pth"
+        
         if not os.path.exists(model_path):
             # Try alternative paths
             model_path = "bert_cyberbullying_improved.pth"
