@@ -34,3 +34,5 @@ waitress==2.1.2   # For production deployment on Windows
 
 plotly>=5.0.0
 
+huggingface_hub
+accelerate

@@ -99,35 +99,31 @@ if 'classifier' not in st.session_state:
 if 'model_loaded' not in st.session_state:
     st.session_state.model_loaded = False
 
-# Model loading function
 @st.cache_resource
 def load_classifier():
-    """Load your trained BERT classifier"""
+    """Load your trained BERT classifier from HuggingFace Hub"""
     try:
-        # Try to load your trained model
-        # Adjust the path to where your model is located
-        model_path = "modebert_cyberbullying_improved.pth"
+        from huggingface_hub import hf_hub_download
 
-        if not os.path.exists(model_path):
-            # Try alternative paths
-            model_path = "bert_cyberbullying_improved.pth"
-        
-        if not os.path.exists(model_path):
-            model_path = "bert_cyberbullying_model.pth"
-        
-        if os.path.exists(model_path):
-            classifier = BERTCyberbullyingClassifier()
-            classifier.load_model(model_path)
-            return classifier, True, "Loaded trained model"
-        else:
-            st.warning("⚠️ Model file not found. Using base model for demo.")
-            # For demo purposes, initialize classifier without loading
-            classifier = BERTCyberbullyingClassifier()
-            return classifier, True, "Using base model (demo mode)"
-            
+        repo_id = "VeeraaVikash/bert-cyberbullying-improved"
+        filename = "bert_cyberbullying_improved.pth"
+
+        st.info("📥 Downloading model from HuggingFace...")
+
+        model_path = hf_hub_download(repo_id=repo_id, filename=filename)
+
+        classifier = BERTCyberbullyingClassifier()
+        classifier.load_model(model_path)
+
+        return classifier, True, "Loaded model from HuggingFace Hub"
+
     except Exception as e:
-        st.error(f"Error loading model: {str(e)}")
-        return None, False, str(e)
+        st.warning(f"⚠️ Model download failed: {e}")
+        st.info("Using base classifier instead (demo mode).")
+
+        classifier = BERTCyberbullyingClassifier()
+        return classifier, True, "Using base model (demo mode)"
+
 
 # Prediction function
 def predict_text(text, classifier):
