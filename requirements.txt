@@ -30,3 +30,7 @@ python-dateutil>=2.8.0
 # Optional: Production Server
 gunicorn==21.2.0  # For production deployment on Linux
 waitress==2.1.2   # For production deployment on Windows
+
+
+plotly>=5.0.0
+
